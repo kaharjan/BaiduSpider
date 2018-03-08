@@ -22,4 +22,19 @@ obj_spider.craw(root_url,filename,save_path)
 ```
 
 
+## 2、dict_spider模块：百度字典
+主要用来解析百度词典：
+![这里写图片描述](https://github.com/mattzheng/BaiduSpider/blob/master/dict_spider/dict_baidu.png?raw=true)
 
+```
+word='人'
+values = {
+    'wd': word,
+    'ptype': 'char'
+}
+data = urllib.parse.urlencode(values)
+root_url = "http://dict.baidu.com/s?" + data + '#'
+obj_spider = SpiderMain()
+obj_spider.craw(root_url)
+```
+生成的链接为： `'http://dict.baidu.com/s?ptype=char&wd=%E4%BA%BA#'`
