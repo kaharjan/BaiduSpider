@@ -1,8 +1,11 @@
 # mattzheng/BaiduSpider解析
 [fifths/python_baike_spider](https://github.com/fifths/python_baike_spider)，对于新手来说不太友好... 但是功能强大，目前
 该库可以实现：百度百科、百度词典的爬取。
+
 必要的库：**beautifulsoup4**
+
     pip install beautifulsoup4
+
 
 ## 1、baike_spider模块：百度百科
 
