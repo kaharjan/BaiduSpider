@@ -1,5 +1,5 @@
 import os,sys
-#sys.path.append('E:\matt\crawler\python_baike_spider-master')
+#sys.path.append('./python_baike_spider-master')
 from baike_spider import url_manager
 from baike_spider import html_downloader
 from baike_spider import html_parser
@@ -36,6 +36,6 @@ class SpiderMain(object):
 if __name__ == '__main__':
     root_url = "http://baike.baidu.com/view/21087.htm"
     save_path = None  # 全局
-    # save_path = 'E:\\matt\\crawler\\python_baike_spider-master\\baike_spider\\'
+    # save_path = './baike_spider/'
     obj_spider = SpiderMain()
     obj_spider.craw(root_url)
