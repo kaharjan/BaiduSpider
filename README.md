@@ -1,16 +1,25 @@
-# python_baike_spider
-1.爬取百度百科
-2.爬取百度词典
-
-###推荐使用ide PyCharm
-
-## 环境
-python3
-
-### 依赖
+# mattzheng/BaiduSpider解析
+[fifths/python_baike_spider](https://github.com/fifths/python_baike_spider)，对于新手来说不太友好... 但是功能强大，目前
+该库可以实现：百度百科、百度词典的爬取。
+必要的库：**beautifulsoup4**
     pip install beautifulsoup4
 
-### 运行
-    python.exe spider_main.py
+## 1、baike_spider模块：百度百科
 
-如果爬取不了,则百度修改了页面,根据页面修改爬取规则
+ - 功能：输入URL
+ - 输出：HTML网址
+   （详情见[output1.html](https://github.com/mattzheng/BaiduSpider/blob/master/baike_spider/output1.html)）
+ - 主文件：[spider_main.py](https://github.com/mattzheng/BaiduSpider/blob/master/baike_spider/spider_main.py)
+
+我这里对原作者的内容进行简单修改，可以指定路径保存 + 保存名称。
+
+```
+root_url = "http://baike.baidu.com/view/21087.htm"
+save_path = './baike_spider/'
+filename = 'output2.html'
+obj_spider = SpiderMain()
+obj_spider.craw(root_url,filename,save_path)
+```
+
+
+
